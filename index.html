@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: calibri;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 96vh;
+            background-color: rgb(0, 0, 0);
+        }
+
+        p {
+            font-size: 27px;
+            text-align: center;
+            color: #ce0404;
+            text-shadow: 1.5px 1.5px 20px #8f0101;
+            font-weight: 500;
+            letter-spacing: 2px;
+            white-space: initial;
+            word-break: break-all;
+            padding: 0 20px;
+        }
+
+        button {
+            box-sizing: border-box;
+            outline: none;
+            margin: 20px auto;
+            padding: 17px 70px;
+            display: block;
+            box-shadow: 1px 0px 10px 1px #9b0505;
+            border-radius: 3px;
+            border: 1.5px solid #9b0505;
+            background-color: #000;
+            color: #f70000;
+            text-shadow: 1.5px 1.5px 20px #ee5858;
+            font-size: 20px;
+            font-family: calibri;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 750px) {
+
+            body {
+                height: auto;
+            }
+
+        }
+    </style>
+
+    <script>
+
+        function chamonatvali() {
+
+            var ricxvebi = "";
+            var ricxvi = 100;
+
+            while (ricxvi > 0) {
+
+                ricxvebi += '<span style=" color: transparent">_</span>' + ricxvi + '<span style=" color: transparent">_</span>';
+                ricxvi--;
+            }
+            //print the values
+            document.getElementById("ricxvebi").innerHTML = ricxvebi;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <p>დაწერეთ რიცხვები 100-დან 1-მდე ღილაკზე დაჭერისას</p>
+
+    <button onclick="chamonatvali()">დაწერე</button>
+
+    <p id="ricxvebi"></p>
+
+
+</body>
+
+</html>
